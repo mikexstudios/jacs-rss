@@ -41,7 +41,7 @@ get '/jacs_just_accepted.atom' do
     
         atom.entry do
           atom.title title
-          atom.author authors
+          atom.author { atom.name authors }
           atom.link 'href' => link
           atom.id doi
           atom.published date.iso8601(0)
