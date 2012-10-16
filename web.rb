@@ -12,7 +12,7 @@ get '/' do
   "Hello, world"
 end
 
-get '/just_accepted.atom' do
+get '/jacs_just_accepted.atom' do
   agent = Mechanize.new
   page = agent.get('http://pubs.acs.org/toc/jacsat/0/ja')
   articles = page.search('.articleBoxMeta')
